@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Pagination</h1>
+    <p id="description">Pagination creation using DOM with given json data</p>
+    <div class="table-responsive">
+        <div id="inner-Div">
+            <table class="table table-bordered" border="1" cellspacing="1" cellpadding="5">
+                <thead>
+                    <th style="width: 30px; text-align: center;">ID</th>
+                    <th style="width: 150px; text-align: center;">Name</th>
+                    <th style="width: 200px; text-align: center;">Email</th>
+                </thead>
+                <tbody>
+                    <td id="user-id"> </td>
+                    <td id="user-name"> </td>
+                    <td id="user-email"> </td>
+                </tbody>
+
+            </table>
+        </div>
+        <div id="buttons" class="d-flex justify-content-center">
+            <button onclick="firstPage()" id="first">First</button>
+            <button onclick="prevPage(display('0'))" value="0" id="previous">Previous</button>
+            <button onclick="display('2')" value="2" id="num">2</button>
+            <button onclick="display('3')" value="3" id="num">3</button>
+            <button onclick="display('4')" value="4" id="num">4</button>
+            <button onclick="display('5')" value="5" id="num">5</button>
+            <button onclick="display('6')" value="6" id="num">6</button>
+            <button onclick="display('7')" value="7" id="num">7</button>
+            <button onclick="display('8')" value="8" id="num">8</button>
+            <button onclick="display('9')" value="9" id="num">9</button>
+            <button onclick="display('10')" value="10" id="num">10</button>
+            <button onclick="display('11')" value="11" id="num">11</button>
+            <button onclick="display('12')" value="12" id="num">12</button>
+            <button onclick="display('13')" value="13" id="num">13</button>
+            <button onclick="display('14')" value="14" id="num">14</button>
+            <button onclick="display('15')" value="15" id="num">15</button>
+            <button onclick="display('16')" value="16" id="num">16</button>
+            <button onclick="display('17')" value="17" id="num">17</button>
+            <button onclick="display('18')" value="18" id="num">18</button>
+            <button onclick="display('19')" value="19" id="num">19</button>
+            <button onclick="display('20')" value="20" id="num">20</button>
+            <button onclick="display('21')" value="21" id="num">21</button>
+            <button onclick="display('22')" value="22" id="num">22</button>
+            <button onclick="display('23')" value="23" id="num">23</button>
+            <button onclick="display('24')" value="24" id="num">24</button>
+            <button onclick="display('25')" value="25" id="num">25</button>
+            <button onclick="display('26')" value="26" id="num">26</button>
+            <button onclick="display('27')" value="27" id="num">27</button>
+            <button onclick="display('28')" value="28" id="num">28</button>
+            <button onclick="display('29')" value="29" id="num">29</button>
+            <button onclick="display('30')" value="30" id="num">30</button>
+            <button onclick="nextPage(display('0'))" value="1" id="next">Next</button>
+            <button onclick="lastPage()" id="last">Last</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
