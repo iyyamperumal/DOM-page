@@ -508,25 +508,28 @@ const dataJson = [
         "email": "Josiane_Smith@yahoo.com"
     }
 ]
-let currentpage = document.querySelectorAll('#num');
-console.log(currentpage);
+let currentpage;
 function firstPage() {
+    currentpage=0;
     userId.innerText = dataJson[0].id;
     userName.innerText = dataJson[0].name;
     userEmail.innerText = dataJson[0].email;
 }
-function prevPage(currentpage) {
-    userId.innerText = dataJson[currentpage - 2].id;
-    userName.innerText = dataJson[currentpage - 2].name;
-    userEmail.innerText = dataJson[currentpage - 2].email;
+function prevPage() {
+    currentpage=currentpage-1;
+    userId.innerText = dataJson[currentpage].id;
+    userName.innerText = dataJson[currentpage].name;
+    userEmail.innerText = dataJson[currentpage].email;
 
 }
 function display(num) {
-    userId.innerText = dataJson[num - 1].id;
-    userName.innerText = dataJson[num - 1].name;
-    userEmail.innerText = dataJson[num - 1].email;
+    currentpage=num-1;
+    userId.innerText = dataJson[currentpage].id;
+    userName.innerText = dataJson[currentpage].name;
+    userEmail.innerText = dataJson[currentpage].email;
 }
-function nextPage(currentpage) {
+function nextPage() {
+    currentpage=currentpage+1;
     userId.innerText = dataJson[currentpage].id;
     userName.innerText = dataJson[currentpage].name;
     userEmail.innerText = dataJson[currentpage].email;
